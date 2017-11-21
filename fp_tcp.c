@@ -1194,7 +1194,7 @@ struct tcp_sig* fingerprint_tcp(u8 to_srv, struct packet_data* pk,
 
   if (m && m->bad_ttl) {
 
-    OBSERVF("dist", "<= %u", sig->dist);
+    OBSERVF("dist", "%u", sig->dist);
 
   } else {
 
