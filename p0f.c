@@ -1085,8 +1085,8 @@ int main(int argc, char** argv) {
         FATAL("Multiple -m options not supported.");
 
       if (sscanf(optarg, "%u,%u", &max_conn, &max_hosts) != 2 ||
-          !max_conn || max_conn > 100000 ||
-          !max_hosts || max_hosts > 500000)
+          !max_conn || max_conn > 1000000 ||
+          !max_hosts || max_hosts > 10000000)
         FATAL("Outlandish value specified for -m.");
 
       break;
